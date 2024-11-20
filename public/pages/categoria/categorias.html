@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/categoria.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/pages/index.html">Home</a></li>
+                <li><a href="/pages/quizzes.html">Quiz</a></li>
+                <li><a href="/pages/flashcard/flashcards.html">Flashcards</a></li>
+                <li><a href="/pages/categoria/categorias.html">Categorias</a></li>
+                <li><a href="/pages/estatisticas.html">Estatísticas</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <h1>Categorias</h1>
+        <button id="criar-categoria-btn">Criar Categoria</button>
+        
+        <!-- Formulário de criação de categoria -->
+        <div id="formulario-categoria" style="display: none;">
+            <h2>Criar Categoria</h2>
+            <form id="categoria-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required><br>
+                
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" required><br>
+
+                <button type="submit">Salvar Categoria</button>
+            </form>
+        </div>
+
+        <div id="categoria-list"></div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Flashcards Project</p>
+    </footer>
+
+    <script type="module" src="../../js/categoria.js"></script>
+</body>
+</html>

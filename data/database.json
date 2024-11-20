@@ -1,0 +1,114 @@
+{
+  "categorias": [
+    {
+      "id": 1697893600000,
+      "nome": "Geografia",
+      "descricao": "Flashcards relacionados a países, capitais, relevo, clima e outros aspectos geográficos."
+    },
+    {
+      "id": 1697893700000,
+      "nome": "Trívia",
+      "descricao": "Flashcards sobre curiosidades gerais, cultura pop, ciência e outros tópicos diversos."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": 1697893610000,
+      "pergunta": "Qual é o maior oceano do mundo?",
+      "resposta": "Pacífico",
+      "categoria_id": 1697893600000
+    },
+    {
+      "id": 1697893620000,
+      "pergunta": "Qual é a capital da Austrália?",
+      "resposta": "Camberra",
+      "categoria_id": 1697893600000
+    },
+    {
+      "id": 1697893630000,
+      "pergunta": "Qual é o rio mais longo do mundo?",
+      "resposta": "Rio Nilo",
+      "categoria_id": 1697893600000
+    },
+    {
+      "id": 1697893640000,
+      "pergunta": "Qual é o deserto mais seco do mundo?",
+      "resposta": "Deserto do Atacama",
+      "categoria_id": 1697893600000
+    },
+    {
+      "id": 1697893650000,
+      "pergunta": "Quantos continentes existem?",
+      "resposta": "Sete",
+      "categoria_id": 1697893600000
+    },
+    {
+      "id": 1697893660000,
+      "pergunta": "Qual é o ponto mais alto do mundo?",
+      "resposta": "Monte Everest",
+      "categoria_id": 1697893600000
+    },
+    {
+      "id": 1697893670000,
+      "pergunta": "Qual é o maior país do mundo em área?",
+      "resposta": "Rússia",
+      "categoria_id": 1697893600000
+    },
+    {
+      "id": 1697893710000,
+      "pergunta": "Qual é o metal mais abundante na crosta terrestre?",
+      "resposta": "Alumínio",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1697893720000,
+      "pergunta": "Quem pintou a Mona Lisa?",
+      "resposta": "Leonardo da Vinci",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1697893730000,
+      "pergunta": "Qual planeta é conhecido como 'Planeta Vermelho'?",
+      "resposta": "Marte",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1697893740000,
+      "pergunta": "Quantos ossos possui o corpo humano adulto?",
+      "resposta": "206",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1697893750000,
+      "pergunta": "Qual é o elemento químico representado pelo símbolo 'O'?",
+      "resposta": "Oxigênio",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1697893760000,
+      "pergunta": "Em que ano ocorreu a queda do Muro de Berlim?",
+      "resposta": "1989",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1697893770000,
+      "pergunta": "Qual é a velocidade da luz?",
+      "resposta": "Aproximadamente 299.792 km/s",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1732135943176,
+      "pergunta": "Quem foi o primeiro homem a pisar na Lua?",
+      "resposta": "Neil Armstrong",
+      "categoria_id": 1697893700000
+    },
+    {
+      "id": 1732136298390,
+      "pergunta": "Qual é o nome do primeiro satélite artificial enviado ao espaço?",
+      "resposta": "Sputnik 1",
+      "categoria_id": 1697893700000
+    }
+  ],
+  "quizzes": [],
+  "estatisticas": []
+}

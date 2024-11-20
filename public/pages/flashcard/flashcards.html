@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/flashcard.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/pages/index.html">Home</a></li>
+                <li><a href="/pages/quizzes.html">Quiz</a></li>
+                <li><a href="/pages/flashcard/flashcards.html">Flashcards</a></li>
+                <li><a href="/pages/categoria/categorias.html">Categorias</a></li>
+                <li><a href="/pages/estatisticas.html">Estatísticas</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <h1>Flashcards</h1>
+        <button id="criar-flashcard-btn">Criar Flashcard</button>
+
+        <!-- Formulário de criação do flashcard -->
+        <div id="formulario" style="display: none;">
+            <h2>Criar Flashcard</h2>
+            <form id="flashcard-form">
+                <label for="pergunta">Pergunta:</label>
+                <input type="text" id="pergunta" name="pergunta" required>
+                
+                <label for="resposta">Resposta:</label>
+                <input type="text" id="resposta" name="resposta" required>
+                
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <!-- As opções de categorias serão inseridas aqui dinamicamente -->
+                </select>
+                
+                <button type="submit">Criar</button>
+            </form>
+        </div>
+
+        <div id="flashcard-list"></div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Flashcards Project</p>
+    </footer>
+
+    <script type="module" src="../../js/flashcard.js"></script>
+</body>
+</html>
