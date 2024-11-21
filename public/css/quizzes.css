@@ -1,3 +1,4 @@
+/* Estilo para o botão */
 button {
     background-color: #007bff;
     color: white;
@@ -24,7 +25,33 @@ button:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-#flashcard-list {
+/* Estilizando o select */
+select {
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Estilizando o select ao passar o mouse */
+select:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilizando a opção selecionada */
+select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#quizzes-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,81 +59,34 @@ button:focus {
     margin-top: 3vh;
 }
 
-.flashcard {
+.quiz {
     position: relative;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    width: 50vw;
+    width: 20vw;
     background-color: #f9f9f9;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
 
-.flashcard:hover {
+.quiz:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
-.flashcard h3 {
+.quiz h4 {
     margin: 0 0 10px;
     word-wrap: break-word;
 }
 
-.flashcard p {
+.quiz p {
     margin: 0 0 5px;
     word-wrap: break-word;
 }
 
-.flashcard small {
+.quiz small {
     color: #666;
     font-size: 0.9em;
     word-wrap: break-word;
     display: inline-block;
-}
-
-.flashcard .actions {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 10px;
-}
-
-.flashcard .actions button {
-    background: none;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    color: #333;
-}
-
-.flashcard .actions button i {
-    font-size: 20px;
-}
-
-.flashcard .actions button:hover {
-    color: #007bff;
-}
-
-/* Estilo para os ícones de edição e exclusão */
-.edit-btn,
-.delete-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    color: #333;
-    width: 10px;
-    margin-top: -2px;
-    margin-right: 15px;
-}
-
-.edit-btn {
-    margin-right: 0px;
-}
-
-.edit-btn:hover,
-.delete-btn:hover {
-    color: #007bff;
 }

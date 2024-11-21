@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    
+    <title>Quiz</title>
     <link rel="icon" type="image/webp" href="../images/favicon.webp">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quiz.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <nav>
             <ul>
@@ -22,17 +21,25 @@
         </nav>        
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
-        <h1>Bem-vindo ao Projeto de Flashcards</h1>
-        <h2>Sobre o Projeto</h2>
-        <p>Este é um projeto simples para praticar conceitos de paradigmas de programação com flashcards.</p>
-        <p>Aqui você pode criar, ver e estudar seus flashcards, além de fazer quizzes e acompanhar suas estatísticas.</p>
+        <!-- Exibir a pontuação no topo à direita -->
+        <p id="pontuacao"></p>  <!-- Aqui vai aparecer a pontuação -->
+        
+        <h1>Quiz</h1>
+
+        <!-- Div para exibir os flashcards -->
+        <div id="quiz-perguntas">
+            <div id="flashcard-list"></div> <!-- Flashcards serão inseridos aqui -->
+        </div>
+
+        <!-- Botão para finalizar o quiz -->
+        <button id="finalizar-quiz-btn">Finalizar Quiz</button>
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Flashcards Project</p>
     </footer>
+
+    <script type="module" src="../js/quiz.js"></script>
 </body>
 </html>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
-
+    <title>Estatísticas</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/webp" href="../images/favicon.webp">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/categoria.css">
+    <link rel="stylesheet" href="../css/estatisticas.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -25,24 +25,13 @@
     </header>
 
     <main>
-        <h1>Categorias</h1>
-        <button id="criar-categoria-btn">Criar Categoria</button>
-        
-        <!-- Formulário de criação de categoria -->
-        <div id="formulario-categoria" style="display: none;">
-            <h2>Criar Categoria</h2>
-            <form id="categoria-form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" required><br>
-                
-                <label for="descricao">Descrição:</label>
-                <input type="text" id="descricao" required><br>
+        <h1>Estatísticas</h1>
 
-                <button type="submit">Salvar Categoria</button>
-            </form>
+        <div id="estatisticas">
+            <p><strong>Total de Flashcards Criados:</strong> <span id="totalFlashcards">0</span></p>
+            <p><strong>Total de Quizzes Realizados:</strong> <span id="totalQuizzes">0</span></p>
+            <p><strong>Média de Pontuação nos Quizzes:</strong> <span id="mediaPontuacao">0</span></p>
         </div>
-
-        <div id="categoria-list"></div>
     </main>
 
     <!-- Rodapé -->
@@ -50,6 +39,6 @@
         <p>&copy; 2024 Flashcards Project</p>
     </footer>
 
-    <script type="module" src="../js/categoria.js"></script>
+    <script type="module" src="../js/estatisticas.js"></script>
 </body>
 </html>

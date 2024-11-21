@@ -1,0 +1,13 @@
+#estatisticas {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#estatisticas p {
+    margin: 10px 0;
+}
+
+#estatisticas strong {
+    color: #007bff;
+}

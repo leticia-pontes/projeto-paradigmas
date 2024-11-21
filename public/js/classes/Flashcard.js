@@ -10,11 +10,20 @@ class Flashcard {
 
     static async adicionar(pergunta, resposta, categoria_id) {
         const dados = await carregarDados();
-        const novoFlashcard = new Flashcard(pergunta, resposta, categoria_id);
+        
+        // Converte categoria_id para inteiro
+        const categoriaIdInt = parseInt(categoria_id, 10);
+    
+        // Verifica se categoria_id foi convertido corretamente para número
+        if (isNaN(categoriaIdInt)) {
+            throw new Error('categoria_id não é um número válido');
+        }
+    
+        const novoFlashcard = new Flashcard(pergunta, resposta, categoriaIdInt);
         dados.flashcards.push(novoFlashcard);
         await salvarDados(dados);
         return novoFlashcard;
-    }
+    }    
 
     static async listar() {
         const dados = await carregarDados();

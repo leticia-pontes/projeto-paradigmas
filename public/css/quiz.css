@@ -1,0 +1,151 @@
+/* Estilo para a pontuação */
+#pontuacao {
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para centralizar os flashcards */
+#quiz-perguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Ajusta a altura dos flashcards dentro da tela */
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo de cada flashcard */
+.flashcard {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 40vw; /* Largura do flashcard ajustada para a tela */
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.6s;
+}
+
+.flashcard h4 {
+    margin: 0 0 10px;
+}
+
+.flashcard .flashcard-resposta {
+    display: none;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flashcard .actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilo comum para os botões de ação (Mostrar Resposta, Acerto, Erro) */
+.action-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.action-btn:hover {
+    color: #0056b3;
+}
+
+/* Estilos específicos para o botão "Acerto" */
+.acerto-btn {
+    color: green;
+}
+
+.acerto-btn:hover {
+    color: darkgreen;
+}
+
+/* Estilos específicos para o botão "Erro" */
+.erro-btn {
+    color: red;
+}
+
+.erro-btn:hover {
+    color: darkred;
+}
+
+/* Estilo para o botão Finalizar Quiz */
+#finalizar-quiz-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#finalizar-quiz-btn:hover {
+    background-color: #0056b3;
+}
+
+#finalizar-quiz-btn:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+#finalizar-quiz-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos gerais do quiz */
+.quiz-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.quiz-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz-container .flashcard {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .flashcard {
+        width: 90%;
+    }
+
+    #pontuacao {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .quiz-container h2 {
+        font-size: 18px;
+    }
+
+    .flashcard .actions button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

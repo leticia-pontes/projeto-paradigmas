@@ -107,8 +107,33 @@
       "pergunta": "Qual é o nome do primeiro satélite artificial enviado ao espaço?",
       "resposta": "Sputnik 1",
       "categoria_id": 1697893700000
+    },
+    {
+      "id": 1732147978186,
+      "pergunta": "Qual é a capital do Brasil?",
+      "resposta": "Brasília",
+      "categoria_id": 1697893600000
     }
   ],
-  "quizzes": [],
-  "estatisticas": []
+  "quizzes": [
+    {
+      "id": 1732145702596,
+      "pontuacao": 5,
+      "total_flashcards": 7,
+      "categoria": 1697893600000,
+      "data_quiz": "2024-11-20T23:35:02.596Z"
+    },
+    {
+      "id": 1732146382151,
+      "pontuacao": 8,
+      "total_flashcards": 9,
+      "categoria": 1697893700000,
+      "data_quiz": "2024-11-20T23:46:22.151Z"
+    }
+  ],
+  "estatisticas": {
+    "totalFlashcardsCriados": 17,
+    "totalQuizzesRealizados": 2,
+    "mediaPontuacao": 6.5
+  }
 }

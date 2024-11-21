@@ -47,8 +47,8 @@ function mostrarFormulario(categorias) {
         try {
             await Flashcard.adicionar(pergunta, resposta, categoriaSelecionada);
             alert('Flashcard criado com sucesso!');
-            listarFlashcards(); // Recarregar a lista de flashcards
-            document.body.removeChild(formDiv); // Remover o formulário após criação
+            location.reload(true);
+            // listarFlashcards(); // Recarregar a lista de flashcards
         } catch (error) {
             alert('Erro ao criar flashcard: ' + error.message);
         }
@@ -80,8 +80,8 @@ async function listarFlashcards() {
 
     flashcards.forEach(flashcard => {
         // Encontre a categoria com base no categoria_id do flashcard
-        const categoria = categorias.find(categoria => categoria.id === flashcard.categoria_id);
-        
+        const categoria = categorias.find(c => c.id === flashcard.categoria_id);
+
         // Se a categoria for encontrada, use seu nome, caso contrário use "Categoria Desconhecida"
         const categoriaNome = categoria ? categoria.nome : "Categoria Desconhecida";
 

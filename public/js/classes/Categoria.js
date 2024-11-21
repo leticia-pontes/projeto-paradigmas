@@ -20,6 +20,12 @@ class Categoria {
         const dados = await carregarDados();
         return dados.categorias;
     }
+
+    // Método para buscar categoria pelo ID
+    static async buscar(categoriaId) {
+        const dados = await carregarDados();
+        return dados.categorias.find(categoria => categoria.id === categoriaId);
+    }
 }
 
 export { Categoria };
