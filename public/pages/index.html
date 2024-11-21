@@ -7,6 +7,7 @@
     
     <link rel="icon" type="image/webp" href="../images/favicon.webp">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -28,11 +29,35 @@
         <h2>Sobre o Projeto</h2>
         <p>Este é um projeto simples para praticar conceitos de paradigmas de programação com flashcards.</p>
         <p>Aqui você pode criar, ver e estudar seus flashcards, além de fazer quizzes e acompanhar suas estatísticas.</p>
+
+        <!-- Demonstração do Paradigma Lógico -->
+        <section id="paradigma-logico">
+            <h2>Descubra se um número é múltiplo de 3</h2>
+            <label for="numeroInput">Digite um número:</label>
+            <input type="number" id="numeroInput">
+            <button id="verificarBtn">Verificar</button>
+            <p id="resultado"></p>
+        </section>
     </main>
 
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Flashcards Project</p>
     </footer>
+
+    <!-- Script de Lógica -->
+    <script>
+        document.getElementById("verificarBtn").addEventListener("click", () => {
+            const numero = parseInt(document.getElementById("numeroInput").value, 10);
+            const resultado = document.getElementById("resultado");
+
+            // Regra lógica: número é múltiplo de 3?
+            if (!isNaN(numero) && numero % 3 === 0) {
+                resultado.textContent = `${numero} é um múltiplo de 3!`;
+            } else {
+                resultado.textContent = `${numero} não é um múltiplo de 3.`;
+            }
+        });
+    </script>
 </body>
 </html>

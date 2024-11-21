@@ -6,9 +6,20 @@ let flashcardsDaCategoria = [];
 let flashcardIndex = 0;
 let novoQuiz;  // Definido como variável global
 
+/**
+ * Função lógica para verificar se o flashcard pertence a uma categoria específica.
+ * Regra: Retorna verdadeiro se o `categoria_id` do flashcard for igual ao fornecido.
+ * @param {Object} flashcard - O flashcard a ser verificado.
+ * @param {number} categoriaId - O ID da categoria.
+ * @returns {boolean} - Verdadeiro se o flashcard pertence à categoria.
+ */
+function verificarCategoria(flashcard, categoriaId) {
+    return flashcard.categoria_id === categoriaId;
+}
+
 async function carregarQuiz() {
     const urlParams = new URLSearchParams(window.location.search);
-    const categoriaId = urlParams.get('id');  // ID da categoria da URL
+    const categoriaId = urlParams.get('id'); // ID da categoria da URL
 
     // Verificar se categoriaId é válido
     if (!categoriaId || isNaN(categoriaId)) {
@@ -18,7 +29,7 @@ async function carregarQuiz() {
 
     // Carregar flashcards associados à categoria
     const flashcards = await Flashcard.listar();
-    flashcardsDaCategoria = flashcards.filter(flashcard => flashcard.categoria_id === parseInt(categoriaId));  // Filtrando os flashcards pela categoria
+    flashcardsDaCategoria = flashcards.filter(flashcard => verificarCategoria(flashcard, parseInt(categoriaId))); // Usando a lógica para verificar a categoria
 
     if (flashcardsDaCategoria.length === 0) {
         alert('Nenhum flashcard encontrado para esta categoria.');
@@ -26,7 +37,7 @@ async function carregarQuiz() {
     }
 
     // Inicializar o quiz com pontuação 0
-    novoQuiz = await Quiz.iniciar(0, flashcardsDaCategoria.length, parseInt(categoriaId));  // Criando o quiz com pontuação 0
+    novoQuiz = await Quiz.iniciar(0, flashcardsDaCategoria.length, parseInt(categoriaId));
 
     // Exibir o primeiro flashcard
     mostrarFlashcard(flashcardsDaCategoria[flashcardIndex]);
